@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Completar Palavras - Verbos</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <div class="game-container">
+        <h1>Complete a Palavra - Verbos</h1>
+        <div id="word-container"></div>
+        <input type="text" id="guess-input" placeholder="Digite a letra" maxlength="1">
+        <button onclick="checkLetter()">Verificar</button>
+        <p id="message"></p>
+        <p id="score">Pontos: <span id="points">0</span></p>
+        <button onclick="resetGame()">Reiniciar Jogo</button>
+        <p id="result"></p>
+    </div>
+
+    <script src="assets/scripts/game1.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Horario de Actividades</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 90%;
+            max-width: 400px;
+            margin: 50px auto;
+            
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+        }
+        form {
+            margin-top: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="date"],
+        input[type="time"] {
+            width: calc(100% - 12px);
+            padding: 6px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            color: #333;
+        }
+        input[type="text"]::placeholder,
+        input[type="date"]::placeholder,
+        input[type="time"]::placeholder {
+            color: #ffff; /* Color del placeholder */
+        }
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            background-color: #4caf50;
+            
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        /* Estilos para el botón de fecha y hora */
+        #btnFechaHora {
+            width: 100%;
+            padding: 8px;
+            border: none;
+            border-radius: 8px;
+            background-color: #008000; /* Amarillo */
+            color: #fff;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Agenda de Actividades</h2>
+        <br><br>
+        <!-- Botón para desplegar campos de fecha y hora -->
+        <button id="btnFechaHora" onclick="toggleFechaHora()">Registrar Actividad</button>
+
+        <form id="activityForm" action="" method="post" onsubmit="submitForm(event)" style="display: none;">
+            <label for="fecha">Fecha:</label>
+            <input type="date" id="fecha" name="fecha" required><br>
+            <label for="hora_inicio">Hora de Inicio:</label>
+            <input type="time" id="hora_inicio" name="hora_inicio" required><br>
+            <label for="hora_fin">Hora de Finalización:</label>
+            <input type="time" id="hora_fin" name="hora_fin" required><br>
+            <label for="actividad">Actividad:</label>
+            <input type="text" id="actividad" name="actividad" required><br>
+            <label for="lugar">Lugar:</label>
+            <input type="text" id="lugar" name="lugar" required><br>
+            <label for="responsable">Responsable:</label>
+            <input type="text" id="responsable" name="responsable" required><br>
+            <label for="participantes">Participantes:</label>
+            <input type="text" id="participantes" name="participantes" required><br>
+            <label for="recursos">Materiales </label>
+            <input type="text" id="recursos" name="recursos" required><br>
+            <input type="submit" value="Guardar">
+        </form>
+    </div>
+    <script>
+        function toggleFechaHora() {
+            var form = document.getElementById("activityForm");
+            if (form.style.display === "block") {
+                form.style.display = "none";
+            } else {
+                form.style.display = "block";
+            }
+        }
+
+        function submitForm(event) {
+            // Evitar el envío predeterminado del formulario
+            event.preventDefault();
+            
+            // Aquí puedes agregar el código para procesar el formulario, 
+            // como enviar datos al servidor o realizar validaciones en el lado del cliente.
+
+            // Recargar la página después de enviar el formulario
+            window.location.reload();
+        }
+    </script>
+</body>
+</html>

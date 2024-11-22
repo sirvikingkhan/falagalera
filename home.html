@@ -1,0 +1,43 @@
+
+<script>
+    function loadHomeSection() {
+        fetch('home.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('homeContent').innerHTML = data;
+            })
+            .catch(error => console.error('Error cargando home.html:', error));
+    }
+</script>
+
+<section id="add" class="add">
+    <div class="header">
+        <h1>Bienvenido a Aprende Portugués</h1>
+    </div>
+    <div class="container">
+        <div class="card feed">
+            <h3>Noticias Recientes</h3>
+            <p>Publica las últimas noticias o actualizaciones aquí. Mantente informado sobre lo que está ocurriendo en el mundo del aprendizaje de portugués.</p>
+        </div>
+        <div class="card courses">
+            <div>
+                <h3>Cursos Destacados</h3>
+                <p>Muestra aquí tus cursos más populares o recomendados. Estos son los cursos que podrían interesarte para mejorar tus habilidades en portugués.</p>
+            </div>
+            <div>
+                <h3>Últimos Cursos Vistos</h3>
+                <p>Una lista de los cursos que has visto recientemente. Revisa tus cursos recientes y sigue donde los dejaste.</p>
+            </div>
+        </div>
+        <div class="card progress">
+            <div>
+                <h3>Progreso del Estudiante</h3>
+                <p>Estadísticas sobre tu progreso en los cursos. Visualiza tu avance y determina en qué áreas necesitas enfocarte más.</p>
+            </div>
+            <div>
+                <h3>Logros y Certificados</h3>
+                <p>Muestra los logros o certificados que has obtenido. Celebra tus éxitos y visualiza tus certificaciones obtenidas en el aprendizaje del portugués.</p>
+            </div>
+        </div>
+    </div>
+</section><div id="homeContent"></div>

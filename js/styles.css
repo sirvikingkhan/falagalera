@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    /* Fondo negro */
+    color: #fff;
+    /* Letras blancas */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #111;
+    /* Fondo oscuro */
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+    /* Sombra */
+}
+
+h1 {
+    color: #009b3a;
+    /* Verde de la bandera de Brasil */
+    text-transform: uppercase;
+    /* Convertir texto en mayúsculas */
+    font-size: 2.5em;
+    /* Tamaño de la fuente */
+    margin-bottom: 30px;
+    /* Margen inferior */
+}
+
+#options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.option {
+    background-color: #009b3a;
+    /* Verde de la bandera de Brasil */
+    color: #fff;
+    padding: 15px 30px;
+    /* Aumentar el espacio alrededor del texto */
+    margin: 10px;
+    /* Aumentar el margen */
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+    /* Tamaño de la fuente */
+    text-transform: uppercase;
+    /* Convertir texto en mayúsculas */
+    letter-spacing: 1px;
+    /* Espaciado entre letras */
+    transition: background-color 0.3s;
+}
+
+.option:hover {
+    background-color: #007328;
+    /* Verde oscuro de la bandera de Brasil */
+}
+
+#score,
+#errors {
+    margin-top: 20px;
+    font-size: 1.2em;
+    /* Tamaño de la fuente */
+}
+
+#restartButton {
+    background-color: #009b3a;
+    /* Verde de la bandera de Brasil */
+    color: #fff;
+    padding: 15px 30px;
+    /* Aumentar el espacio alrededor del texto */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+    /* Tamaño de la fuente */
+    text-transform: uppercase;
+    /* Convertir texto en mayúsculas */
+    letter-spacing: 1px;
+    /* Espaciado entre letras */
+    transition: background-color 0.3s;
+}
+
+#restartButton:hover {
+    background-color: #007328;
+    /* Verde oscuro de la bandera de Brasil */
+}

@@ -1,0 +1,56 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: flex-start; /* Mueve el contenedor al lado izquierdo */
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #000428, #004e92); /* Gradiente de azul a negro */
+    margin: 0;
+    padding: 0 20px; /* Añade un poco de espacio alrededor del contenido */
+    color: white;
+}
+
+.game-container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo semi-transparente */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    max-width: 300px; /* Define un ancho máximo para el contenedor */
+    margin-left: 20px; /* Añade espacio a la izquierda */
+}
+
+#word-container {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#guess-input {
+    font-size: 18px;
+    padding: 5px;
+    border: 1px solid #004e92;
+    border-radius: 5px;
+    outline: none;
+}
+
+button {
+    font-size: 18px;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    background-color: #004e92;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #002f6c;
+}
+
+#message {
+    font-size: 18px;
+    margin-top: 20px;
+}

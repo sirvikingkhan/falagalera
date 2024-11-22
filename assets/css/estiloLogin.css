@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url(../img/FondoLogin.jpg) no-repeat center top;
+    background-size: cover;
+    font-family: sans-serif;
+    height: 100vh;
+}
+
+.login-box {
+    width: 320px;
+    height: 420px;
+    background: #000;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 120px 40px;
+}
+
+.login-box .avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -40px;
+    left: calc(50% - 50px);
+}
+
+.login-box h1 {
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.login-box label {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    display: block;
+}
+
+.login-box input {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.login-box input[type="text"],
+.login-box input[type="password"] {
+    border: none;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.button {
+    border: none;
+    color: black;
+    padding: 5px 15px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+    background-color: rgba(255, 255, 255, 0);
+    border: 2px solid white;
+    border-radius: 45px;
+}
+
+.button:hover {
+    background-color: #000;
+    color: white;
+}
+
+.login-box a:hover {
+    color: #fff;
+}
+
+img {
+    max-width: 200px;
+    max-height: 90px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
